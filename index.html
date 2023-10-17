@@ -7,15 +7,22 @@
 
     <link rel="stylesheet" href="output.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <section class="full-container flex flex-col border-black border-2 m-auto mt-5">
-        <section class="upper-field-section p-4">
+    <section class="full-container flex flex-col border-2 w-[31.25rem] m-auto mt-2 bg-gradient-to-b from-cyan-950 to-slate-900 font-spacegrotesk text-white">
+        <section class="upper-field-section p-4 font-pixelify">
             <h2 id="teaching-level" class="mb-5">Associate Professor</h2>
-            <div class="info-subsection flex justify-around">
-                <div class="flex flex-row space-x-4">
-                    <h1 id="name">Kenan Casey</h1>
-                    <h1 id="fantasy-class">Wizard</h1>
+            <div class="info-subsection flex justify-between items-end mx-4">
+                <div class="flex flex-row">
+                    <h1 id="name" class="w-40 text-5xl">Kenan Casey</h1>
+                </div>
+
+                <div>
+                    <h1 id="fantasy-class" class="text-2xl">Wizard</h1>
                 </div>
 
                 <div>
@@ -26,46 +33,47 @@
         </section>
 
         <section class="image-section flex justify-center">
-            <div class="character-image h-96 w-96 border-black border-2 flex justify-center">
-                <img src="images/headshots/casey_Kenan.jpg" class="object-cover w-full"/>
+            <div class="character-image h-80 w-[27rem] flex justify-center bg-gradient-to-b from-cyan-700 to-cyan-700">
+                <!--<img src="images/headshots/casey_Kenan.jpg" class="object-cover w-full"/>-->
             </div>
         </section>
         
-        <section class="under-image-detail-section flex space-x-10 mx-14 mb-5">
+        <section class="under-image-detail-section flex justify-between mx-8 px-3 mb-5 bg-gradient-to-b from-gray-400 to-slate-600">
             <p id="character-id">#03</p>
             <p id="nickname">DadJoke</p>
             <p id="height">HT: 5'10"</p>
             <p id="weight">WT: 200lbs</p>
         </section>
+        <section class="bottom-portion-of-card-section p-5 mb-5 bg-gradient-to-b from-cyan-700 to-cyan-950 mx-14 rounded-lg">
+            <section class="cost-stamina-section flex mb-5 justify-between">
+                <h2 id="cost">Cost: 70</h2>
+                <h2 id="stamina">Stamina: Low</h2>
+            </section>
 
-        <section class="cost-stamina-section flex mb-5 justify-around">
-            <h2 id="cost">Cost: 70</h2>
-            <h2 id="stamina">Stamina: Low</h2>
+            <section class="attacks-section mb-5">
+                <div id="attack-one" class="flex flex-row justify-between">
+                    <h1 id="attack-one-label">Indiscriminate Dad Joke</h1>
+                    <h1 id="attack-one-points" class="font-bold text-emerald-200">62</h1>  
+                </div>
+                <div id="attack-two" class="flex justify-between">
+                    <h1 id="attack-two-label">Ignorant Slang</h1>
+                    <h1 id="attack-two-points" class="font-bold text-emerald-200">74</h1>
+                </div>
+            </section>
+
+            <section class="resistances-weaknesses-section flex space-x-16">
+                <div>
+                    <h3 class="font-bold text-emerald-200">Resistances</h3>
+                    <p>Children</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-emerald-200">Weaknesses</h3>
+                    <p>Grading work, comic sans</p>
+                </div>
+            </section>
         </section>
 
-        <section class="attacks-section mb-5 border-2">
-            <div id="attack-one" class="flex flex-row mx-10 justify-between">
-                <h1 id="attack-one-label">Indiscriminate Dad Joke</h1>
-                <h1 id="attack-one-points">62</h1>  
-            </div>
-            <div id="attack-two" class="flex justify-around">
-                <h1 id="attack-two-label">Ignorant Slang</h1>
-                <h1 id="attack-two-points">74</h1>
-            </div>
-        </section>
-
-        <section class="resistances-weaknesses-section flex mb-5 mx-10 justify-between">
-            <div>
-                <h3>Resistances</h3>
-                <p>Children</p>
-            </div>
-            <div>
-                <h3>Weaknesses</h3>
-                <p>Grading work, comic sans</p>
-            </div>
-        </section>
-
-        <footer class="flex justify-around">
+        <footer class="flex justify-around mb-2">
             <p>@2023</p>
             <p>#codehard</p>
             <p>Kenan Casey</p>
