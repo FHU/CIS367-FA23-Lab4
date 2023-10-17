@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.triangle-left-top{
+    width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 32px 32px 0 0;
+  border-color: #89886B transparent transparent transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.triangle-right-top{
+    width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 32px 32px 0;
+  border-color: transparent #89886B transparent transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.triangle-left-bottom{
+    width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 32px 0 0 32px;
+  border-color: transparent transparent transparent #89886B;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.triangle-right-bottom{
+    width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 32px 32px;
+  border-color: transparent transparent #89886B transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.card, .green-border{
+    border-color: #89886B;
+}
+
+.sqaure, .line{
+    background-color: #89886B;
+}
+
+.triangle-container{
+    background-color: white;
+}
+
+.custom{
+    bottom: 17.5rem;
+}

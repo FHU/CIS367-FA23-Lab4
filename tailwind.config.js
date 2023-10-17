@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./*.{html, js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'main' : ['Signika Negative', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
