@@ -9,46 +9,52 @@
 
 </head>
 <body>
-    <section class="full-container flex flex-col items-center border-black border-8">
-        <section class="upper-field-section">
-            <h2 id="teaching-level">Associate Professor</h2>
-            <div class="info-subsection flex">
-                <h1 id="name">Kenan Casey</h1>
-                <h1 id="fantasy-class">Wizard</h1>
-                <h1 id="health-points">HP 60</h1>
+    <section class="full-container flex flex-col border-black border-2 m-auto mt-5">
+        <section class="upper-field-section p-4">
+            <h2 id="teaching-level" class="mb-5">Associate Professor</h2>
+            <div class="info-subsection flex justify-around">
+                <div class="flex flex-row space-x-4">
+                    <h1 id="name">Kenan Casey</h1>
+                    <h1 id="fantasy-class">Wizard</h1>
+                </div>
+
+                <div>
+                    <h1 id="health-points">HP 60</h1>
+                    <h2 id="field">Computer Science</h2>
+                </div>
             </div>
         </section>
 
-        <section class="image-section">
-            <h2 id="education-level">Ph. D</h2>
-            <div id="character-image">
-                <p class="p-52 border-black border-2">Placeholder Image</p>
-            </div>
-            <div class="under-image-detail-section flex">
-                <p id="character-id">#03</p>
-                <p id="nickname">DadJoke</p>
-                <p id="height">HT: 5'10"</p>
-                <p id="weight">WT: 200lbs</p>
+        <section class="image-section flex justify-center">
+            <div class="character-image h-96 w-96 border-black border-2 flex justify-center">
+                <img src="images/headshots/casey_Kenan.jpg" class="object-cover w-full"/>
             </div>
         </section>
+        
+        <section class="under-image-detail-section flex space-x-10 mx-14 mb-5">
+            <p id="character-id">#03</p>
+            <p id="nickname">DadJoke</p>
+            <p id="height">HT: 5'10"</p>
+            <p id="weight">WT: 200lbs</p>
+        </section>
 
-        <section class="cost-stamina-section flex">
+        <section class="cost-stamina-section flex mb-5 justify-around">
             <h2 id="cost">Cost: 70</h2>
             <h2 id="stamina">Stamina: Low</h2>
         </section>
 
-        <section class="attacks-section">
-            <div id="attack-one" class="flex">
+        <section class="attacks-section mb-5 border-2">
+            <div id="attack-one" class="flex flex-row mx-10 justify-between">
                 <h1 id="attack-one-label">Indiscriminate Dad Joke</h1>
                 <h1 id="attack-one-points">62</h1>  
             </div>
-            <div id="attack-two" class="flex">
+            <div id="attack-two" class="flex justify-around">
                 <h1 id="attack-two-label">Ignorant Slang</h1>
                 <h1 id="attack-two-points">74</h1>
             </div>
         </section>
 
-        <section class="resistances-weaknesses-section flex">
+        <section class="resistances-weaknesses-section flex mb-5 mx-10 justify-between">
             <div>
                 <h3>Resistances</h3>
                 <p>Children</p>
@@ -59,10 +65,9 @@
             </div>
         </section>
 
-        <footer class="flex">
+        <footer class="flex justify-around">
             <p>@2023</p>
             <p>#codehard</p>
-            <p>@2023</p>
             <p>Kenan Casey</p>
         </footer>
     </section>
