@@ -29,7 +29,7 @@
         width: 100%;
         height: 100%;
         justify-content: center;
-        background-color: #af93ff;
+        background-image: linear-gradient( to bottom, #af93ff, white, #af93ff);
         border: double rgb(167, 145, 24) 0.5rem;
         align-items: center;
         font-family:'Times New Roman', Times, serif;
@@ -39,7 +39,6 @@
         align-items: center;
         justify-content: center;
         display: flex;
-        background-color: #af93ff;
         gap: 22%;
         padding: 0.5rem;
     }
