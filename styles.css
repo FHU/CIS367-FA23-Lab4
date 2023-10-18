@@ -63,3 +63,9 @@ hr{
     padding: 1rem;
     font-size: small;
 }
+
+.coststamina{
+    display: flex;
+    justify-content: space-between; 
+    padding: .2rem;
+}
