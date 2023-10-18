@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FHU Faculty Trading Cards</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
 
 </head>
-<body>
-    
+<body class="h-screen flex justify-center items-center bg-gradient-to-br from-yellow-500 to-red-700">
+    <div id="card" class="bg-red-600 rounded-2xl w-96 relative border-8 border-slate-200 text-slate-200">
+        <p id="rank" class="absolute bg-slate-200 p-1 text-sm text-red-600 rounded-br-2xl">Assitant Professor</p>
+        <div id="top" class="flex justify-between items-end pt-3 px-4 gap-2">
+            <div id="name_logo" class="flex gap-3">
+                <img src="images/design-ideas/dumbbell.png" id="type" class="w-6">
+                <h1 id="name" class="text-xl">Maurice Williams</h1>
+            </div>
+            <div class="flex flex-col text-right">
+                <h1 class="text-xl"> HP: <span id="hp">95</span></h1>
+                <h2 id="field_of_study" class="text-sm">Kinesiology</h2>
+            </div>
+        </div>
+        <div id="image_section" class="relative m-5 border-4 border-slate-300 rounded">
+            <h2 id="educ_level" class="absolute right-0 text-red-600 bg-slate-300 p-2 rounded-bl-2xl">PhD</h2>
+            <img src="images/headshots/maurice_w.jpg" id="headshot" class="">
+            <div id="information" class="flex justify-between text px-2 border-t-4 border-slate-300 text-red-600 bg-slate-300">
+                <p id="nickname">Liftosaur</p>
+                <p>Gender: <span id="gender">M</span></p>
+                <p>Height: <span id="height">5'8"</span></p>
+            </div>
+        </div>
+        <div id="cost_stamina">
+            <div class="flex justify-center pb-4">
+                <p class="border-r-2 pr-2">Cost: <span id="cost">7</span></p>
+                <p class="pl-2">Stamina: <span id="stamina">High</span></p>
+            </div>
+        </div>
+        <div id="attacks" class="flex flex-col justify-center">
+            <div class="flex justify-between border-t-2 border-slate-300 py-2 mx-4 px-4">
+                <h1 id="attack1">Barbell Bomb</h1>
+                <h1 id="damage1">71</h1>
+            </div>
+            <div class="flex justify-between border-b-2 border-slate-300 py-2 mx-4 px-4">
+                <h1 id="attack2">Toe Tickle</h1>
+                <h1 id="damage2">85</h1>
+            </div>
+        </div>
+        <div id="weakness_resistance" class="text-sm flex justify-between mx-4 p-4">
+            <div>
+                <h1>Weakness:</h1>
+                <p id="weakness" class="pt-2">Bad Grading</p>
+            </div>
+            <div>
+                <h1>Resistances:</h1>
+                <p id="resistances" class="pt-2">100's</p>
+            </div>
+        </div>
+
+        <div id="footer" class="text-xs flex justify-between p-2">
+            <p>&copy; 2023</p>
+            <p id="hashtag">#thetoeshoes</p>
+            <p id="creator">Classic.Man.Christian</p>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
