@@ -1,0 +1,207 @@
+body {
+    background-color: gray;
+}
+
+.grid-card-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: gray;
+    grid-gap: 50px;
+}
+
+.grid-individual-card {
+    width: 315px;
+    height: 500px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    border: 10px solid gold;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.card-background-blue {
+    background: linear-gradient(to bottom right, #d9e4ec, #adc1d1, #7d99af, #557792, #7d99af, #adc1d1);
+}
+
+.card-background-redorange {
+    background: linear-gradient(to bottom right, #ffbfba, #ff978f, #ff756b, #ff594c, #ff756b, #ff978f);
+}
+
+.card-background-green {
+    background: linear-gradient(to bottom right, #aae5b7, #78cf8b, #4fb665, #319d49, #4fb665, #78cf8b);
+}
+
+.card-background-yellow {
+    background: linear-gradient(to bottom right, #ffffa4, #fff870, #fff200, #fff870, #ffffa4, #fff870);
+}
+
+div {
+    vertical-align: center;
+    font-family: 'Lato', 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif;
+    font-stretch: ultra-condensed;
+}
+
+/* HEADER - ABOVE IMAGE */
+
+.header-basic-title {
+    font-size: 9px;
+    font-weight: 600;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.header-profile-name {
+    font-size: 20px;
+    font-weight: 600;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.header-hp {
+    color: crimson;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.header-icon {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* IMAGE */
+
+.profile-image {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    color: blue;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    border: 5px yellow outset;
+    box-shadow: 3px 3px 10px #000;
+}
+
+/* DESCRIPTION BELOW IMAGE */
+
+.description-below-image {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.description-below-image-background {
+    background: linear-gradient(to right, goldenrod, yellow, goldenrod);
+    padding: 2px 10px;
+    margin: 2px;
+}
+
+/* ATTACKS */
+
+.skill-center {
+    text-align: center;
+}
+
+.skill-cost {
+    font-size: 18px;
+    text-align: center;
+    padding: 3px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+}
+
+.skill-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.skill-description {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #aaa;
+}
+
+.skill-damage {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
+
+/* WEAKNESS, RESISTANCE, RETREAT COST BOXES */
+
+.wrr-header {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.wrr-value {
+    text-align: center;
+    font-size: 18px;
+}
+
+.weakness {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.resistance {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.retreat {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+/* DESCRIPTION ABOVE COPYRIGHT */
+
+.description-above-footer {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.description-above-footer-border {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    border: 1.5px ridge gold;
+    border-radius: 4px;
+}
+
+/* COPYRIGHT - Very bottom of card */
+
+.footer-text {
+    text-align: center;
+    font-size: 7.2px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: last-line; /* this is an arbitrary name to denote the last line */
+    background-color: transparent; /* in case it inherits any background */
+    border: none; /* in case it inherits any borders */
+    box-shadow: none; /* in case it inherits any shadows */
+}
+
