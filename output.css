@@ -654,12 +654,12 @@ video {
   align-self: center;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-br-lg {
@@ -775,6 +775,10 @@ video {
 
 .font-spacegrotesk {
   font-family: Space Grotesk, sans-serif;
+}
+
+.font-gillsans {
+  font-family: Gill Sans, sans-serif;
 }
 
 .text-2xl {
