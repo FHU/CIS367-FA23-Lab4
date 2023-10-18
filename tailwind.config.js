@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./*.{html, js}"],
   theme: {
-    extend: {},
+    extend: {
+      'font-family': {
+        'mont': 'montserrat, sans-serif',
+        'bebas': 'bebas neue, sans-serif'
+      }
+    },
   },
   plugins: [],
 }
