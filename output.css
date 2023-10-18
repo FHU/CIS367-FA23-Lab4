@@ -562,6 +562,10 @@ video {
   width: 24rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -631,6 +635,11 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
