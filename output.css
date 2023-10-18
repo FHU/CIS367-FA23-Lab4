@@ -633,7 +633,16 @@ video {
   padding-top: 1.25rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-slate-200 {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
