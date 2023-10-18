@@ -4,7 +4,11 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+.attack{
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem;
+}
 .card-container{
     width: 15rem;
     box-shadow: -8px 9px 16px -3px gray;
@@ -14,7 +18,7 @@ body{
     background-color: black;
     box-shadow: -8px 9px 16px -3px gray;
     border-radius: .4rem;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .card-frame{
@@ -48,4 +52,14 @@ img{
     display: flex;
     justify-content: space-between;
     font-size: x-small;
+}
+
+hr{
+    border-color:darkslategrey;
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    font-size: small;
 }
