@@ -1,11 +1,11 @@
 body {
-    background-color: gray;
+    background-color: #a8a8a8; /* gray */
 }
 
 .grid-card-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: gray;
+    background-color: #a8a8a8; /* gray */
     grid-gap: 50px;
 }
 
@@ -14,25 +14,25 @@ body {
     height: 500px;
     display: inline-grid;
     grid-template-columns: auto auto auto auto auto auto;
-    border: 10px solid gold;
+    border: 10px solid #4682b4; /* steel blue */
     border-radius: 20px;
     padding: 5px;
 }
 
 .card-background-blue {
-    background: linear-gradient(to bottom right, #d9e4ec, #adc1d1, #7d99af, #557792, #7d99af, #adc1d1);
+    background: linear-gradient(to bottom right, #e0f0ff, #b0c7e1, #6195c0, #3c6e91, #6195c0, #b0c7e1);
 }
 
 .card-background-redorange {
-    background: linear-gradient(to bottom right, #ffbfba, #ff978f, #ff756b, #ff594c, #ff756b, #ff978f);
+    background: linear-gradient(to bottom right, #a8c0ff, #839ab0, #60778e, #4c5f6e, #60778e, #839ab0);
 }
 
 .card-background-green {
-    background: linear-gradient(to bottom right, #aae5b7, #78cf8b, #4fb665, #319d49, #4fb665, #78cf8b);
+    background: linear-gradient(to bottom right, #c0e4ff, #91b8d4, #6995a7, #497482, #6995a7, #91b8d4);
 }
 
 .card-background-yellow {
-    background: linear-gradient(to bottom right, #ffffa4, #fff870, #fff200, #fff870, #ffffa4, #fff870);
+    background: linear-gradient(to bottom right, #d8eaff, #a9bed8, #7b90b1, #5a6f89, #7b90b1, #a9bed8);
 }
 
 div {
@@ -40,8 +40,6 @@ div {
     font-family: 'Lato', 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif;
     font-stretch: ultra-condensed;
 }
-
-/* HEADER - ABOVE IMAGE */
 
 .header-basic-title {
     font-size: 9px;
@@ -69,8 +67,6 @@ div {
     text-align: center;
 }
 
-/* IMAGE */
-
 .profile-image {
     grid-column-start: 1;
     grid-column-end: 7;
@@ -80,11 +76,9 @@ div {
 img {
     width: 300px;
     height: 200px;
-    border: 5px yellow outset;
+    border: 5px #4682b4 outset; /* steel blue border */
     box-shadow: 3px 3px 10px #000;
 }
-
-/* DESCRIPTION BELOW IMAGE */
 
 .description-below-image {
     grid-column-start: 2;
@@ -96,12 +90,10 @@ img {
 }
 
 .description-below-image-background {
-    background: linear-gradient(to right, goldenrod, yellow, goldenrod);
+    background: linear-gradient(to right, #3c6e91, #a8a8a8, #3c6e91); /* colors adjusted to blue and gray */
     padding: 2px 10px;
     margin: 2px;
 }
-
-/* ATTACKS */
 
 .skill-center {
     text-align: center;
@@ -141,8 +133,6 @@ img {
     border-right: 1px solid #aaa;
 }
 
-/* WEAKNESS, RESISTANCE, RETREAT COST BOXES */
-
 .wrr-header {
     text-align: center;
     font-size: 10px;
@@ -169,8 +159,6 @@ img {
     grid-column-end: 7;
 }
 
-/* DESCRIPTION ABOVE COPYRIGHT */
-
 .description-above-footer {
     grid-column-start: 1;
     grid-column-end: 7;
@@ -188,11 +176,9 @@ ul {
     list-style: none;
     margin: 0;
     padding: 5px;
-    border: 1.5px ridge gold;
+    border: 1.5px ridge #4682b4; /* steel blue */
     border-radius: 4px;
 }
-
-/* COPYRIGHT - Very bottom of card */
 
 .footer-text {
     text-align: center;
@@ -205,3 +191,12 @@ ul {
     box-shadow: none; /* in case it inherits any shadows */
 }
 
+.copyright {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    border-top: 1px solid #aaa;
+    padding-top: 5px;
+}
