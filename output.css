@@ -725,11 +725,6 @@ video {
   padding: 1.25rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -775,10 +770,6 @@ video {
 
 .font-spacegrotesk {
   font-family: Space Grotesk, sans-serif;
-}
-
-.font-gillsans {
-  font-family: Gill Sans, sans-serif;
 }
 
 .text-2xl {
