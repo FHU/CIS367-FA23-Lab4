@@ -32,6 +32,7 @@ let cardInnerHTML =
 `
 
 
+
 async function addAllCard(){
     // load the data
 
@@ -79,7 +80,8 @@ async function addAllCard(){
 `
 
       div.innerHTML = cardInnerHTML;
-      document.body.appendChild(div);
+      const cardContainer = document.getElementById('cardContainer');
+      cardContainer.appendChild(div);
     });
     
 }

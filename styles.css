@@ -80,6 +80,12 @@ div {
     box-shadow: 3px 3px 10px #000;
 }
 
+.profile-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 img {
     width: 200%;
     justify-content: center;
