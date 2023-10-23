@@ -22,12 +22,12 @@ async function addAllCards() {
         let div = document.createElement('div');
         
         let cardInnerHTML = 
-            `<div class="bg-gradient-to-b from-gray-500 to-gray-700 rounded-lg align-middle justify-center  border-8 border-solid border-yellow-500 max-w-xs mx-auto overflow-hidden shadow-lg m-4">
+            `<div class="bg-gradient-to-b from-gray-500 to-gray-700 rounded-lg align-middle justify-center border-8 border-solid border-yellow-500 max-w-xs mx-auto overflow-hidden shadow-lg m-4">
             
                 <div class="flex flex-row justify-around text-white border-b-2 border-solid p-2">
                     <div class="flex flex-col">
                         <p class="text-sm border-2 border-solid rounded-lg text-center">${person.Rank}</p>
-                        <p class="font-bold text-lg">${person.FirstName} ${person.LastName}</p>
+                        <p class="font-bold text-lg">${person.FirstName} '${person.NickName}' ${person.LastName}</p>
                     </div>
                             
                     <div class="flex flex-col text-right">
@@ -80,7 +80,7 @@ async function addAllCards() {
                                     
                 </div>
                                     
-                <div class="flex flex-row text-white p-2">
+                <div class="flex flex-row justify-evenly text-white p-2">
                     <p class="w-1/3">@2023</p>
                     <p class="w-1/3">CodeHard</p>
                     <p class="w-1/3">Kaylee Odom</p>
