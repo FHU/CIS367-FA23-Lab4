@@ -534,6 +534,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -550,6 +584,10 @@ video {
   margin: auto;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -558,6 +596,11 @@ video {
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .mb-2 {
@@ -572,8 +615,16 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-10 {
@@ -582,6 +633,14 @@ video {
 
 .h-80 {
   height: 20rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-1\/2 {
@@ -616,6 +675,10 @@ video {
   width: 100%;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -644,6 +707,10 @@ video {
   justify-content: space-around;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .divide-x > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-x-reverse: 0;
   border-right-width: calc(1px * var(--tw-divide-x-reverse));
@@ -668,6 +735,11 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.bg-indigo-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 27 75 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -787,6 +859,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -801,18 +878,44 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+/*Gradients for PH.D.*/
+
 .gradient {
   background: linear-gradient(to bottom, #210950, #000);
 }
+
+/*Gradients for Masters*/
 
 .gradient2 {
   background: linear-gradient(to bottom, #85080c, #000);
 }
 
+/*Gradients for Special Cards*/
+
 .gradient3 {
   background: linear-gradient(to bottom, #ffcc01, #220606);
 }
 
+/*Gradients for Associate Professor Borders*/
+
 .gradient4 {
-  background: linear-gradient(to bottom, #424242, #000);
+  background: linear-gradient(to bottom, #ffcc01, #220606);
+}
+
+/*Gradients for Assistant Professor Borders*/
+
+.gradient5 {
+  background: linear-gradient(to bottom, #ffcc01, #220606);
+}
+
+/*Gradients for Professor Borders*/
+
+.gradient5 {
+  background: linear-gradient(to bottom, #ffcc01, #220606);
+}
+
+/*Gradients for Instructor Borders*/
+
+.gradient5 {
+  background: linear-gradient(to bottom, #ffcc01, #220606);
 }
