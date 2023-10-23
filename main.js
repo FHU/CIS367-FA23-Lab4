@@ -83,6 +83,7 @@ async function addAllCards() {
         </section>`
 
         div.innerHTML = cardInnerHTML;
+        
 
         document.body.appendChild(div);
     });
