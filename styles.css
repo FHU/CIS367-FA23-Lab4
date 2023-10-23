@@ -19,6 +19,7 @@ body {
     padding: 5px;
 }
 
+
 .card-background-blue {
     background: linear-gradient(to bottom right, #e0f0ff, #b0c7e1, #6195c0, #3c6e91, #6195c0, #b0c7e1);
 }
@@ -67,17 +68,21 @@ div {
     text-align: center;
 }
 
-.profile-image {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    color: blue;
+.profile-image img {
+    width: 300px; /* Adjust these values based on the natural size of your image */
+    height: 200px;
+    max-width: 100%; /* This ensures the image doesn't scale beyond its original width */
+    border: 5px #4682b4 outset; /* steel blue border */
+    box-shadow: 3px 3px 10px #000;
 }
 
 img {
-    width: 300px;
-    height: 200px;
-    border: 5px #4682b4 outset; /* steel blue border */
+    width: 200%;
+    justify-content: center;
+    max-height: 200px;
+    border: 5px #4682b4 outset;
     box-shadow: 3px 3px 10px #000;
+    object-fit: contain; /* This ensures that the image retains its aspect ratio */
 }
 
 .description-below-image {
