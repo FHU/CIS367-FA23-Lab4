@@ -1,6 +1,6 @@
-const API_URL = "https://fhu-faculty-api.netlify.app/fhu-faculty.json"
+//const API_URL = "https://fhu-faculty-api.netlify.app/fhu-faculty.json"
 
-//const API_URL = "fhu-faculty-api.json"
+const API_URL = "fhu-faculty-api.json"
 
 addAllCards();
 
@@ -40,7 +40,7 @@ async function addAllCards() {
                 </div>
                         
                 <div class="flex flex-col items-center m-2">
-                    <img class="w-full h-40 object-scale-down border-2 border-solid rounded-t-lg" src="images/headshots/pierce_sarah.jpg">
+                    <img class="object-scale-down border-2 border-solid rounded-t-lg" src="images/headshots/pierce_sarah.jpg">
                     <p class="text-center text-white w-full text-sm border-b-2 border-r-2 border-l-2 
                         border-solid rounded-b-lg p-1 pb-2">NO.439 ${person.FirstName} ${person.LastName} HT:${person.Height}</p>
                 </div>
