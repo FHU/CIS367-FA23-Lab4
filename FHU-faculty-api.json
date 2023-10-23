@@ -24,7 +24,7 @@
     "Resistances": "Children",
     "Weaknesses": "Grading homework, Comic Sans, Chapel",
     "Creator": "Kenan Casey",
-    "Hyperlink": "https://shopgoodwill.com/home"
+    "Gradient": "gradient"
   },
   {
     "id": 2,
@@ -51,7 +51,7 @@
     "Resistances": "Student Tears",
     "Weaknesses": "None",
     "Creator": "Kenan Casey",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 3,
@@ -78,7 +78,7 @@
     "Resistances": "Advanced Calculus",
     "Weaknesses": "Dairy",
     "Creator": "Kenan Casey",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 4,
@@ -105,7 +105,7 @@
     "Resistances": "Closed Note Tests",
     "Weaknesses": "Zoom",
     "Creator": "Priscilla Harris",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 5,
@@ -132,7 +132,7 @@
     "Resistances": "Stupidity",
     "Weaknesses": "Immune System",
     "Creator": "Samuel Flowers",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 6,
@@ -159,7 +159,7 @@
     "Resistances": "Fixed Mindset",
     "Weaknesses": "The Night, Typos",
     "Creator": "Priscilla Harris",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 7,
@@ -186,7 +186,7 @@
     "Resistances": "Chegg",
     "Weaknesses": "Movies with Bad Physics",
     "Creator": "Priscilla Harris",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 8,
@@ -213,7 +213,7 @@
     "Resistances": "Textual variance",
     "Weaknesses": "Bad Bible translations",
     "Creator": "Wesley Baker",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 9,
@@ -240,7 +240,7 @@
     "Resistances": "Hercules the dog",
     "Weaknesses": "Makin Music",
     "Creator": "Luke Noles",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 10,
@@ -267,7 +267,7 @@
     "Resistances": "Heights",
     "Weaknesses": "Crockpots",
     "Creator": "Luke Noles",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 11,
@@ -294,7 +294,7 @@
     "Resistances": "Mean People",
     "Weaknesses": "Stairs",
     "Creator": "Luke Noles",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 12,
@@ -321,7 +321,7 @@
     "Resistances": "Student confidence",
     "Weaknesses": "Parking Lots, Canon Cameras",
     "Creator": "Izzie",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 13,
@@ -348,7 +348,7 @@
     "Resistances": "",
     "Weaknesses": "None",
     "Creator": "Kenan Casey",
-    "Hyperlink": ""
+    "Gradient": "gradient3"
   },
   {
     "id": 14,
@@ -375,7 +375,7 @@
     "Resistances": "YikYak",
     "Weaknesses": "Quinoa",
     "Creator": "Kenan Casey",
-    "Hyperlink": ""
+    "Gradient": "gradient3"
   },
   {
     "id": 15,
@@ -402,7 +402,7 @@
     "Resistances": "Student Begging",
     "Weaknesses": "Handwriting",
     "Creator": "Kenan Casey",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 16,
@@ -429,7 +429,7 @@
     "Resistances": "",
     "Weaknesses": "",
     "Creator": "",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 17,
@@ -456,7 +456,7 @@
     "Resistances": "Traditional Gender Roles",
     "Weaknesses": "Engineering",
     "Creator": "Kenan Casey",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 18,
@@ -483,7 +483,7 @@
     "Resistances": "",
     "Weaknesses": "",
     "Creator": "",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 19,
@@ -510,7 +510,7 @@
     "Resistances": "IQ 300 Students",
     "Weaknesses": "Messy Notes",
     "Creator": "Gavin Boler",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 20,
@@ -537,7 +537,7 @@
     "Resistances": "Ladders",
     "Weaknesses": "Broken Leg",
     "Creator": "Gavin Boler",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 21,
@@ -564,7 +564,7 @@
     "Resistances": "Lightning",
     "Weaknesses": "Slowness",
     "Creator": "Gavin Boler",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 22,
@@ -591,7 +591,7 @@
     "Resistances": "NonMath Majors",
     "Weaknesses": "None",
     "Creator": "Addison Adcock",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 23,
@@ -618,7 +618,7 @@
     "Resistances": "Power Outages",
     "Weaknesses": "Quizlet",
     "Creator": "Addison Adcock",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 24,
@@ -645,7 +645,7 @@
     "Resistances": "Freshmen",
     "Weaknesses": "Broken Printers",
     "Creator": "Addison Adcock",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 25,
@@ -672,7 +672,7 @@
     "Resistances": "Canon",
     "Weaknesses": "Sunsets",
     "Creator": "Kaylee Odom",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 26,
@@ -699,7 +699,7 @@
     "Resistances": "Dirty Gloves",
     "Weaknesses": "Grey's Anatomy",
     "Creator": "Kaylee Odom",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 27,
@@ -726,7 +726,7 @@
     "Resistances": "Outdoors",
     "Weaknesses": "Long shorts",
     "Creator": "Kaylee Odom",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 28,
@@ -753,7 +753,7 @@
     "Resistances": "Students' essays",
     "Weaknesses": "The emotional impact of the Bible",
     "Creator": "Wesley Baker",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 29,
@@ -780,7 +780,7 @@
     "Resistances": "Paraguay dictator Stoessner",
     "Weaknesses": "Horrible grammar",
     "Creator": "Wesley Baker",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 30,
@@ -807,7 +807,7 @@
     "Resistances": "zyBook readings",
     "Weaknesses": "Bad Quizlet grades",
     "Creator": "Mark Miles",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 31,
@@ -834,7 +834,7 @@
     "Resistances": "Out of focus photos",
     "Weaknesses": "Dutch angles",
     "Creator": "Mark Miles",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 32,
@@ -861,7 +861,7 @@
     "Resistances": "Plagiarized papers",
     "Weaknesses": "Memory verse scores",
     "Creator": "Mark Miles",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 33,
@@ -888,7 +888,7 @@
     "Resistances": "Research Papers",
     "Weaknesses": "Lack of Detail",
     "Creator": "Avery Harris",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 34,
@@ -915,7 +915,7 @@
     "Resistances": "Quizzes",
     "Weaknesses": "Lack of Detail",
     "Creator": "Avery Harris",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 35,
@@ -942,7 +942,7 @@
     "Resistances": "Bad attitudes",
     "Weaknesses": "Outdoors",
     "Creator": "Avery Harris",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 36,
@@ -969,7 +969,7 @@
     "Resistances": "Students not loving Figma",
     "Weaknesses": "Gluten",
     "Creator": "Allison Walker",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 37,
@@ -996,7 +996,7 @@
     "Resistances": "Fixed Mindset",
     "Weaknesses": "Nothing",
     "Creator": "Allison Walker",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 38,
@@ -1023,7 +1023,7 @@
     "Resistances": "Students asking questions",
     "Weaknesses": "Clarification",
     "Creator": "Allison Walker",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 39,
@@ -1050,7 +1050,7 @@
     "Resistances": "Contridiction",
     "Weaknesses": "Too Humble",
     "Creator": "Allison Walker",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 40,
@@ -1077,7 +1077,7 @@
     "Resistances": "Bloodshed of any type",
     "Weaknesses": "Any unidentified body of water",
     "Creator": "Abbie Vance",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 41,
@@ -1104,7 +1104,7 @@
     "Resistances": "Paganism",
     "Weaknesses": "College football",
     "Creator": "Abbie Vance",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 42,
@@ -1131,7 +1131,7 @@
     "Resistances": "The wiles of the devil",
     "Weaknesses": "Technology",
     "Creator": "Abbie Vance",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 43,
@@ -1158,7 +1158,7 @@
     "Resistances": "All other NFL fans",
     "Weaknesses": "Technology",
     "Creator": "Tucker Brown",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 44,
@@ -1185,7 +1185,7 @@
     "Resistances": "The Devil temptations",
     "Weaknesses": "Cake",
     "Creator": "Tucker Brown",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 45,
@@ -1212,7 +1212,7 @@
     "Resistances": "The feeling of pain",
     "Weaknesses": "Sleep",
     "Creator": "Tucker Brown",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 46,
@@ -1239,7 +1239,7 @@
     "Resistances": "Students not paying attention",
     "Weaknesses": "Forgets the Schedule",
     "Creator": "Austin Applegate",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 47,
@@ -1266,7 +1266,7 @@
     "Resistances": "time limits",
     "Weaknesses": "too patient",
     "Creator": "Austin Applegate",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 48,
@@ -1293,7 +1293,7 @@
     "Resistances": "Devil's Advocate",
     "Weaknesses": "Too Busy",
     "Creator": "Austin Applegate",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 49,
@@ -1320,7 +1320,7 @@
     "Resistances": "Cheating",
     "Weaknesses": "Teaching",
     "Creator": "Jaydon Dulgar",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 50,
@@ -1347,7 +1347,7 @@
     "Resistances": "Low work ethic",
     "Weaknesses": "Running",
     "Creator": "Jaydon Dulgar",
-    "Hyperlink": ""
+    "Gradient": "gradient3"
   },
   {
     "id": 51,
@@ -1374,7 +1374,7 @@
     "Resistances": "Lawlessness",
     "Weaknesses": "Human Emotion",
     "Creator": "Jaydon Dulgar",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 52,
@@ -1401,7 +1401,7 @@
     "Resistances": "Injuries",
     "Weaknesses": "Sore Glutes",
     "Creator": "Christian Stackpole",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 53,
@@ -1428,7 +1428,7 @@
     "Resistances": "Feedback",
     "Weaknesses": "Waterfall Development",
     "Creator": "Christian Stackpole",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 54,
@@ -1455,7 +1455,7 @@
     "Resistances": "100's",
     "Weaknesses": "Bad grading",
     "Creator": "Christian Stackpole",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 55,
@@ -1482,7 +1482,7 @@
     "Resistances": "Evolution",
     "Weaknesses": "Boring ties",
     "Creator": "Bryce Greene",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 56,
@@ -1509,7 +1509,7 @@
     "Resistances": "Psychological Damage",
     "Weaknesses": "Physical Damage",
     "Creator": "Bryce Greene",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 57,
@@ -1536,7 +1536,7 @@
     "Resistances": "Emotional Damage",
     "Weaknesses": "Singing",
     "Creator": "Bryce Greene",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 58,
@@ -1563,7 +1563,7 @@
     "Resistances": "physical damage",
     "Weaknesses": "Too busy",
     "Creator": "Kaitlyn Thompson",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   },
   {
     "id": 59,
@@ -1590,7 +1590,7 @@
     "Resistances": "Psychic Damage",
     "Weaknesses": "Physical Damage",
     "Creator": "Kaitlyn Thompson",
-    "Hyperlink": ""
+    "Gradient": "gradient"
   },
   {
     "id": 60,
@@ -1617,6 +1617,6 @@
     "Resistances": "",
     "Weaknesses": "Admissions",
     "Creator": "",
-    "Hyperlink": ""
+    "Gradient": "gradient2"
   }
 ]
