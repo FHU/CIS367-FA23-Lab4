@@ -1,7 +1,6 @@
 {
   "name": "lab4",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch"
@@ -11,5 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "tailwind": "^4.0.0"
+  },
+  "description": "",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
   }
 }
