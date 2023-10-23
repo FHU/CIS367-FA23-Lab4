@@ -1,0 +1,150 @@
+
+
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.card{
+    object-fit: content;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    border-color: #A98A0B;
+    border-style: solid;
+    border-width: 12px;
+    background-color: #0d1563;
+    height: 450px;
+}
+
+.top{
+    border-radius:30px, 30px, 0px, 0px;
+    border-color: black;
+    background-color: #A98A0B;
+    border-style: solid;
+    padding-bottom: -100px; 
+    font-family: 'Philosopher', sans-serif;
+}
+.top p{
+    position: relative;
+    left:110px;
+    margin-bottom: -10px;
+    margin-top:0px;
+    font-size: 10px;
+    /* bottom:10px; */
+}
+.top h1{
+    position: relative;
+    right:30px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    font-size: 18px;
+    /* bottom:30px; */
+
+}
+
+.HP{
+    position:relative;
+    left:90px;
+    bottom:520px;
+}
+.HP img{
+    height: 50px;
+}
+.HP h2{
+    position: relative;
+    bottom:55px;
+    font-size: 16px;
+    color:#fff;
+    /* border-style: solid; */
+    /* border-color: ; */
+    /* border-width: 2px; */
+}
+.flames{
+    width: 230px;
+    border-color: #A98A0B;
+}
+.staff {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom:260px;
+    left:20px;
+    width: 225px;
+}
+.profile{
+    position: relative;
+    top: 10px;
+}
+.information{
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #A98A0B;
+    opacity:0.5;
+}
+
+.titleLine{
+    position: relative;
+    bottom: 380px;
+    border: 1px solid black;
+    border-radius:10px 10px 1px 1px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7px;
+    height: 30px;
+    width: 250px;
+    background-color: #A98A0B;
+    border-style: solid;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 14px;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 15px;
+    bottom: 755px;
+    background-color: grey;
+    font-family: 'Philosopher', sans-serif;
+    font-size: x-small;
+}
+
+.information{
+    position: relative;
+    display: flex;
+    bottom:400px;
+    display: flex;
+    width: 250px;
+    margin-left: 7px;
+    border-color: #A98A0B;
+    border-style: solid;
+}
+.damage{
+    position: relative;
+    display: flex;
+    font-size: small;
+    background-color: #A98A0B;
+}
+.damage p{
+    margin:5px;
+}
+
+.attacks{
+    position: relative;
+    top: 50px;
+    right: 170px;
+    width: 250px;
+    font-size: small;
+}
+.information.weakReCost{
+    background-color: #A98A0B;
+    /* opacity: 10; */
+}
+
