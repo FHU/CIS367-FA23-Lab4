@@ -1,5 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flow+Block&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.material-symbols-outlined {
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid purple;
+  padding-inline: 1px;
+  padding-block: 1px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+}
+
+.material-symbols-adjusted {
+  padding-right: 2px;
+  padding-left: 0px;
+  padding-block: 1px;
+}
+
+
+.card {
+  width: 250px;
+  height: 350px;
+  background-color: darkgray;
+  border: 2px solid black;
+  border-radius: 40px;
+}
+
+.card-header {
+  width: 100%;
+  height: 25%;
+  padding-inline: 1rem;
+  padding-block: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  background-image: linear-gradient(to top, darkgray 0%, transparent 90%);
+  border-radius: 40px 40px 0px 0px;
+}
+
+.img-block {
+  width: 100%;
+  padding-inline: 1rem;
+  background-color: rgb(237, 237, 237);
+  background-image: linear-gradient(to top, darkgray 0%, transparent 50%,  darkgray 90%);
+  display: flex;
+  gap: 1rem;
+}
+
+.card-img {
+  height: 150px;
+  width: 125px;
+  border: 2px solid white
+}
+
+.img-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.img-stat {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.img-stat-level {
+  font-size: smaller;
+  font-weight: 900;
+}
+
+.name {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.title {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.rank {
+  font-size: small;
+  font-weight: 300;
+  background-color: whitesmoke;
+  display: block;
+  width: fit-content;
+  padding-inline: 8px;
+  padding-block: 2px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.header-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.hp {
+  color: rgb(255, 58, 58);
+
+}
+
+.health {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.atk-stats {
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+}
+
+.atk {
+  max-width: 50%;
+}
+
+.atk-title {
+  font-size: small;
+  font-weight: 700;
+}
+
+.atk-desc {
+  font-size: smaller;
+  line-height: 0.75rem;
+}

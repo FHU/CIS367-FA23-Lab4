@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       'font-family': {
         'mont': 'montserrat, sans-serif',
-        'bebas': 'bebas neue, sans-serif'
+        'bebas': 'bebas neue, sans-serif',
+        'flow': 'flow block, sans'
       }
     },
   },
