@@ -18,10 +18,11 @@ async function  addAllCards() {
         // add that person's card to the DOM
     
     people.forEach( person => {
-        let div = document.getElementById('cards');
+        let div = document.createElement('div');
+        
         let cardInnerHTML = 
         `
-        <div id="card" class="flex flex-col justify-center items-center text-center bg-blue-300 m-3 rounded-xl">
+        <div class="flex flex-col justify-center items-center text-center bg-blue-300 m-3 rounded-xl">
             <div class="head flex flex-row flex-wrap justify-evenly bg-blue-900 mb-5 p-2 gap-8 w-full rounded-xl">
                 <div class="flex flex-col">
                     <h1>${person.Rank}</h1>
@@ -83,8 +84,9 @@ async function  addAllCards() {
         ;
         
         div.innerHTML = cardInnerHTML;
-
-        div.append(cardInnerHTML);
+        
+        div.className = 'flex flex-row justify-center';
+        document.body.appendChild(div) ;
         console.log(div);
 
     });
