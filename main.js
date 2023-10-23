@@ -1,9 +1,10 @@
-const API_URL = '/FHU-faculty-api.json';
+
+const API_URL = 'https://fhu-faculty-api.netlify.app/fhu-faculty.json';
 const container = document.querySelector(".container");
 
 let backgroundColors = {
-  "Science" : "to-emerald-900",
   "Mathematics" : "to-blue-950",
+  "Science" : "to-emerald-900",
   "Computer Science" : "to-green-800",
   "Engineering" : "to-sky-900",
   "Bible" : "to-purple-950",
@@ -30,7 +31,8 @@ let backgroundColors = {
   "Kinesiology" : "to-red-800",
   "Biochemistry" : "to-emerald-900",
   "Music" : "to-lime-800",
-  "undefined" : "to-zinc-500"
+  "" : "to-zinc-500",
+  "Philosophy" : "to-purple-950"
 }
 
 
@@ -45,7 +47,7 @@ async function addAllCards(){
 
     people.forEach(person => {
 
-      console.log(backgroundColors[person.FieldofStudy])
+      console.log(backgroundColors[person.FieldofStudy]);
 
 
 
@@ -78,8 +80,8 @@ async function addAllCards(){
           <div class="line w-full h-1 absolute bottom-7 left-0"></div>
           <img
             class="w-2/3"
-            src="/images/headshots/butterfield_brian.jpg"
-            alt="A photo of Brian Butterfield"
+            src="https://fhu-faculty-api.netlify.app/images/headshots/${person.Image}"
+            alt="${person.FirstName} ${person.LastName}"
           />
         </div>
         <div class="name-container flex flex-col items-center">

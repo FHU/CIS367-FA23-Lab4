@@ -656,6 +656,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -744,8 +748,107 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-neutral-950 {
+  --tw-gradient-from: #0a0a0a var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(10 10 10 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-emerald-900 {
   --tw-gradient-to: #064e3b var(--tw-gradient-to-position);
+}
+
+.to-red-600 {
+  --tw-gradient-to: #dc2626 var(--tw-gradient-to-position);
+}
+
+.to-blue-950 {
+  --tw-gradient-to: #172554 var(--tw-gradient-to-position);
+}
+
+.to-green-800 {
+  --tw-gradient-to: #166534 var(--tw-gradient-to-position);
+}
+
+.to-sky-900 {
+  --tw-gradient-to: #0c4a6e var(--tw-gradient-to-position);
+}
+
+.to-amber-600 {
+  --tw-gradient-to: #d97706 var(--tw-gradient-to-position);
+}
+
+.to-cyan-400 {
+  --tw-gradient-to: #22d3ee var(--tw-gradient-to-position);
+}
+
+.to-emerald-300 {
+  --tw-gradient-to: #6ee7b7 var(--tw-gradient-to-position);
+}
+
+.to-fuchsia-800 {
+  --tw-gradient-to: #86198f var(--tw-gradient-to-position);
+}
+
+.to-fuchsia-950 {
+  --tw-gradient-to: #4a044e var(--tw-gradient-to-position);
+}
+
+.to-gray-800 {
+  --tw-gradient-to: #1f2937 var(--tw-gradient-to-position);
+}
+
+.to-indigo-950 {
+  --tw-gradient-to: #1e1b4b var(--tw-gradient-to-position);
+}
+
+.to-lime-800 {
+  --tw-gradient-to: #3f6212 var(--tw-gradient-to-position);
+}
+
+.to-orange-700 {
+  --tw-gradient-to: #c2410c var(--tw-gradient-to-position);
+}
+
+.to-pink-900 {
+  --tw-gradient-to: #831843 var(--tw-gradient-to-position);
+}
+
+.to-purple-950 {
+  --tw-gradient-to: #3b0764 var(--tw-gradient-to-position);
+}
+
+.to-red-400 {
+  --tw-gradient-to: #f87171 var(--tw-gradient-to-position);
+}
+
+.to-red-800 {
+  --tw-gradient-to: #991b1b var(--tw-gradient-to-position);
+}
+
+.to-red-950 {
+  --tw-gradient-to: #450a0a var(--tw-gradient-to-position);
+}
+
+.to-stone-500 {
+  --tw-gradient-to: #78716c var(--tw-gradient-to-position);
+}
+
+.to-yellow-200 {
+  --tw-gradient-to: #fef08a var(--tw-gradient-to-position);
+}
+
+.to-yellow-300 {
+  --tw-gradient-to: #fde047 var(--tw-gradient-to-position);
+}
+
+.to-zinc-500 {
+  --tw-gradient-to: #71717a var(--tw-gradient-to-position);
+}
+
+.object-none {
+  -o-object-fit: none;
+     object-fit: none;
 }
 
 .p-6 {
