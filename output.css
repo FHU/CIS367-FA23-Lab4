@@ -669,12 +669,18 @@ video {
 }
 
 .img-stat-level {
-  font-size: smaller;
+  font-size: x-large;
   font-weight: 900;
+  text-align: center;
+  width: 100%;
+}
+
+.img-stat-level-sm {
+  font-size: large;
 }
 
 .name {
-  font-size: x-large;
+  font-size: large;
   font-weight: 600;
 }
 
@@ -695,11 +701,16 @@ video {
   padding-block: 2px;
   border: 2px solid black;
   border-radius: 20px;
+  overflow-y: visible;
+  white-space: nowrap;
 }
 
 .header-stats {
   display: flex;
   flex-direction: column;
+  text-align: right;
+  overflow-y: visible;
+  white-space: nowrap;
 }
 
 .hp {
@@ -709,6 +720,10 @@ video {
 .health {
   font-size: x-large;
   font-weight: 700;
+}
+
+.type {
+  font-size: small;
 }
 
 .atk-stats {
@@ -726,6 +741,8 @@ video {
 .atk-title {
   font-size: small;
   font-weight: 700;
+  line-height: 0.7rem;
+  margin-bottom: 4px;
 }
 
 .atk-desc {
