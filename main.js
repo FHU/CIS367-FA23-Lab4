@@ -20,7 +20,7 @@ async function addAllCards() {
         let div = document.createElement('div');
         
         let cardInnerHTML = 
-            `<div class="bg-gradient-to-b from-gray-500 to-gray-700 rounded-lg align-middle justify-center border-8 border-solid border-yellow-500 max-w-sm h-full mx-auto overflow-hidden shadow-lg m-4">
+            `<div class="bg-gradient-to-b from-gray-500 to-gray-700 rounded-lg align-middle justify-center border-8 border-solid border-yellow-500 max-w-sm h-full mx-auto overflow-hidden shadow-lg m-2">
             
                 <div class="flex flex-col justify-around text-white border-b-2 border-solid p-2">
                     <div class="flex flex-row justify-between">
@@ -33,8 +33,8 @@ async function addAllCards() {
                     </div>
                 </div>
                 
-                <div class="flex flex-col items-center m-2">
-                    <img class="w-full rounded-t-lg" src="https://fhu-faculty-api.netlify.app/images/headshots/${person.Image}" alt="${person.FirstName} ${person.LastName}"/>
+                <div class="flex flex-col items-center m-3">
+                    <img class="h-80 w-[26.4rem] rounded-t-lg" src="https://fhu-faculty-api.netlify.app/images/headshots/${person.Image}" alt="${person.FirstName} ${person.LastName}"/>
                     <p class="text-center text-white w-full text-sm border-b-2 border-r-2 border-l-2 
                         border-solid rounded-b-lg p-1 pb-2">NO.439 ${person.FirstName} ${person.LastName} HT:${person.Height}</p>
                 </div>
@@ -42,7 +42,7 @@ async function addAllCards() {
                 <div class="text m-2">
                     <div class="flex flex-row justify-start text-white">
                         <span class="material-symbols-outlined text-xl pt-1 pl-3">stars</span>
-                        <p class="font-bold text-center text-lg pl-10">${person.Attack1}</p>
+                        <p class="font-bold pt-1 text-center text-lg pl-10">${person.Attack1}</p>
                     </div>
                     <p class="py-3 px-2 text-white text-sm">Prevent all damage done to this Pokemon by attacks from Basic Pokemon during 
                         your apponenets next turn. This pokemon can't use Quick Guard during your next turn.</p>
@@ -74,7 +74,7 @@ async function addAllCards() {
                                     
                 </div>
                                     
-                <div class="flex flex-row justify-evenly text-white p-2">
+                <div class="flex flex-row justify-evenly text-white px-2">
                     <p class="w-1/3">@2023</p>
                     <p class="w-1/3">#CodeHard</p>
                     <p class="w-1/3">Kaylee Odom</p>
