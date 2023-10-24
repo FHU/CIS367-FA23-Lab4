@@ -69,21 +69,24 @@ div {
     text-align: center;
 }
 
-.profile-image img {
+.profile-image {
+    grid-column: 3/4;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 300px; /* Adjust these values based on the natural size of your image */
-    height: 200px;
-    max-width: 100%; /* This ensures the image doesn't scale beyond its original width */
-    border: 5px #4682b4 outset; /* steel blue border */
-    box-shadow: 3px 3px 10px #000;
+    justify-content: center;
+    position: relative;  /* Set the position to relative */
 }
 
-.profile-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.profile-image img {
+    position: absolute;  /* Absolutely position the image */
+    top: 50%;   /* Position it 50% from the top */
+    left: 50%;  /* Position it 50% from the left */
+    width: 100%;  /* Set the width to 100% */
+    max-height: 200px;
+    border: 5px #4682b4 outset;
+    box-shadow: 3px 3px 10px #000;
+    transform: translateX(-50%) translateY(-50%);  /* Translate the image back 50% of its width and height */
+    object-fit: contain;
 }
 
 img {
@@ -94,6 +97,7 @@ img {
     box-shadow: 3px 3px 10px #000;
     object-fit: contain; /* This ensures that the image retains its aspect ratio */
 }
+
 
 .description-below-image {
     grid-column-start: 2;
