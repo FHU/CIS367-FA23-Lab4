@@ -1,8 +1,8 @@
 body{
     display:flex;
-    padding: 15rem;
     justify-content: center;
-    align-items: center;
+    flex-basis: 0;
+    flex-wrap: wrap;
 }
 .attack{
     display: flex;
@@ -10,6 +10,7 @@ body{
     padding: .2rem;
 }
 .card-container{
+    margin: 2rem;
     width: 15rem;
     box-shadow: -8px 9px 16px -3px gray;
 }
@@ -38,6 +39,8 @@ body{
 img{
     border: .2rem solid darkslategrey;
     border-radius: .4rem;
+    max-width: 125px;
+    max-height: 150px;
 }
 
 .card-head{
