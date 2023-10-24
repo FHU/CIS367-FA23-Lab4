@@ -20,18 +20,21 @@ async function addAllCards() {
         let div = document.createElement('div');
         
         let cardInnerHTML = 
-            `<div class="bg-gradient-to-b from-gray-500 to-gray-700 rounded-lg align-middle justify-center border-8 border-solid border-yellow-500 max-w-xs mx-auto overflow-hidden shadow-lg m-4">
+            `<div class="bg-gradient-to-b from-gray-500 to-gray-700 rounded-lg align-middle justify-center border-8 border-solid border-yellow-500 max-w-sm h-full mx-auto overflow-hidden shadow-lg m-4">
             
-                <div class="flex flex-row justify-around text-white border-b-2 border-solid p-2">
+                <div class="flex flex-col justify-around text-white border-b-2 border-solid p-2">
+                    <div class="flex flex-row justify-between">
+                        <p class="text-sm border-2 border-solid rounded-lg text-center px-2">${person.Rank}</p>
+                        <p class="px-2 font-bold align-bottom">HP${person.HitPoints}</p>
+                    </div>
                     <div class="flex flex-col">
-                        <p class="text-sm border-2 border-solid rounded-lg text-center">${person.Rank}</p>
                         <p class="font-bold">${person.FirstName} '${person.NickName}' ${person.LastName}</p>
                         <p class="">${person.FieldofStudy}</p>
                     </div>
                 </div>
-                        
+                
                 <div class="flex flex-col items-center m-2">
-                    <img class="w-2/3" src="https://fhu-faculty-api.netlify.app/images/headshots/${person.Image}" alt="${person.FirstName} ${person.LastName}"/>
+                    <img class="w-full rounded-t-lg" src="https://fhu-faculty-api.netlify.app/images/headshots/${person.Image}" alt="${person.FirstName} ${person.LastName}"/>
                     <p class="text-center text-white w-full text-sm border-b-2 border-r-2 border-l-2 
                         border-solid rounded-b-lg p-1 pb-2">NO.439 ${person.FirstName} ${person.LastName} HT:${person.Height}</p>
                 </div>
@@ -58,15 +61,15 @@ async function addAllCards() {
                     </p>
                 </div>
                                     
-                <div class="flex flex-row m-2 justify-around pt-3 border-t-2 border-solid">
-                    <div class="flex flex-row text-xs border-r-2 border-solid">
+                <div class="flex flex-col m-2 justify-around pt-4 border-t-2 border-solid">
+                    <div class="flex flex-row text-xs pb-2 ">
                         <span class="material-symbols-outlined text-red-400">local_fire_department</span>
-                        <p class="text-red-400 font-semibold">Weakness: ${person.Weaknesses}</p>
+                        <p class="text-red-400 pt-1 font-semibold">Weakness: ${person.Weaknesses}</p>
                     </div>
                                     
-                    <div class="flex flex-row text-xs pl-4">
-                        <span class="pb-4 material-symbols-outlined text-purple-400">mystery</span>
-                        <p class="text-purple-400 font-semibold">Resistance: ${person.Resistances}</p>
+                    <div class="flex flex-row text-xs">
+                        <span class="pb-2 material-symbols-outlined text-purple-400">mystery</span>
+                        <p class="text-purple-400 pt-1 font-semibold">Resistance: ${person.Resistances}</p>
                     </div>
                                     
                 </div>
