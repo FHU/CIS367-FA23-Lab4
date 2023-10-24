@@ -4,7 +4,7 @@ body {
     font-family: sans-serif;
   }
   
-  /* Style the card container */
+ 
   .card {
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -14,7 +14,7 @@ body {
     margin: 20px;
   }
   
-  /* Style the card header */
+
   .card-header {
     background-color: #3498db;
     color: #ffffff;
@@ -22,37 +22,38 @@ body {
     text-align: center;
   }
   
-  /* Style the card title */
+
   .card-header h1 {
     font-size: 24px;
     margin: 0;
   }
   
-  /* Style the card image */
-  .card-image img {
+
+  .card-image img {  
+    background-image: url(casey_Kenan.jpg);
     max-width: 100%;
     height: auto;
   }
   
-  /* Style the card info */
+ 
   .card-info {
     padding: 20px;
     text-align: center;
   }
   
-  /* Style the card name */
+
   .card-info h2 {
     font-size: 20px;
     margin: 0;
   }
   
-  /* Style the card attributes */
+  
   .card-info p {
     margin: 5px 0;
     font-size: 16px;
   }
   
-  /* Style the "View Details" button */
+ 
   .card-button {
     text-align: center;
     padding: 15px;
@@ -72,7 +73,7 @@ body {
     background-color: #1f6da1;
   }
   
-  /* Media query for responsiveness */
+  
   @media (max-width: 600px) {
     .card {
       width: 100%;
