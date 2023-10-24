@@ -2,7 +2,29 @@
 module.exports = {
   content: ["./*.{html, js}"],
   theme: {
-    extend: {},
+    extend: {
+      width:{
+        '92':'92%',
+      },
+
+      fontSize: {
+        'notSmall': '0.875rem',
+        'smallish':'0.77rem', 
+      },
+
+      lineHeight:{
+        'smallish':'0.5rem',
+      },
+      height:{
+        'cardHeight':'34.25rem',
+      },
+      fontFamily: {
+        'playfair': ['Playfair Display', 'serif'],
+        'poppins': ['Poppins', 'sans'],
+        'mill':['Sorts Mill Goudy', 'serif'],
+        'goudy':['EB Garamond', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
