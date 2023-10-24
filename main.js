@@ -65,7 +65,7 @@ async function addAllCards(){
 
     people.forEach(person => {
         let card = document.createElement('div');
-        card.setAttribute('class', 'flex flex-col m-10 w-fit')
+        card.setAttribute('class', 'flex flex-col w-fit')
         let cardInnerHTML = 
         `<div id="card" class="flex flex-col bg-gradient-to-r from-red-600 via-red-400 to-red-600 rounded-2xl w-96 relative border-8 border-slate-200 text-slate-200">
             <p id="rank" class="absolute bg-slate-200 p-1 px-3 text-sm text-red-600 rounded-br-2xl">${person.Rank}</p>
