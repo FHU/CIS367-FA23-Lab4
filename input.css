@@ -1,3 +1,81 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+ 
+  .card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+  }
+  
+
+  .card-header {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+
+  .card-header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+
+  .card-image img {  
+    background-image: url(casey_Kenan.jpg);
+    max-width: 100%;
+    height: auto;
+  }
+  
+ 
+  .card-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  .card-info h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  
+  .card-info p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+ 
+  .card-button {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .card-button a {
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .card-button a:hover {
+    background-color: #1f6da1;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .card {
+      width: 100%;
+    }
+  }

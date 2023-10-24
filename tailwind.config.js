@@ -1,9 +1,27 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html, js}"],
+  content: [
+    "./src/**/*.{html,js}", 
+  ],
   theme: {
-    extend: {},
+    extend: {
+      
+      fontFamily: {
+       
+        custom: ['CustomFont', 'arial'],
+      },
+      colors: {
+        
+        primary: '#3498db',
+        secondary: '#f39c12',
+      },
+      
+    },
   },
-  plugins: [],
+  plugins: [
+    
+    require('@tailwindcss/forms'), 
+    require('@tailwindcss/typography'), 
+  
+  ],
 }
-
