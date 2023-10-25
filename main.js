@@ -17,8 +17,8 @@ async function addAllCards() {
         let cardInnerHTML =
         `<section class="card-border w-[31.25rem] h-full m-auto mt-2 p-2 bg-gradient-to-b from-gray-400 to-gray-700 font-spacegrotesk text-white rounded-2xl">
         <section class="full-container h-full flex flex-col bg-gradient-to-b from-indigo-950 to-slate-900 rounded-2xl">
-            <section class="upper-field-section pb-4 pr-4 font-pixelify">
-                <h2 id="teaching-level" class="w-48 p-1 mb-2 bg-gradient-to-b from-gray-400 to-slate-600 rounded-br-lg text-lg">
+            <section class="upper-field-section pb-4 pr-4 font-pixelify h-42">
+                <h2 id="teaching-level" class="w-52 p-1 mb-2 bg-gradient-to-b from-gray-400 to-slate-600 rounded-br-lg text-lg">
                     ${person.Rank}
                 </h2>
                 <div class="info-subsection flex justify-between items-end mx-4">
@@ -28,7 +28,7 @@ async function addAllCards() {
                     </div>
         
                     <div class="text-end">
-                        <h1 id="health-points" class="text-5xl"><span class="text-lg">HP</span> ${person.HitPoints}</h1>
+                        <h1 id="health-points" class="text-5xl"><span class="text-lg">HP</span> <span class="font-spacegrotesk font-bold text-emerald-200">${person.HitPoints}</span?</h1>
                         <h2 id="field" class="text-lg">${person.FieldofStudy}</h2>
                     </div>
                 </div>
