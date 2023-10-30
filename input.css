@@ -2,37 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+/*Stylistic Gradients*/
+
 /*Gradients for PH.D.*/
-.gradient {
+/* .gradient {
     background: linear-gradient(to bottom, #210950, #000);
-}
+} */
 
 /*Gradients for Masters*/
-.gradient2 {
+/* .gradient2 {
     background: linear-gradient(to bottom, #85080c, #000);
-}
+} */
 
 /*Gradients for Special Cards*/
-.gradient3 {
+/* .gradient3 {
     background: linear-gradient(to bottom, #ffcc01, #220606);
-}
+} */
 
 /*Gradients for Associate Professor Borders*/
-.gradient4 {
+/* .gradient4 {
     background: linear-gradient(to bottom, #ffcc01, #220606);
-}
+} */
 
 /*Gradients for Assistant Professor Borders*/
-.gradient5 {
+/* .gradient5 {
     background: linear-gradient(to bottom, #ffcc01, #220606);
-}
+} */
 
 /*Gradients for Professor Borders*/
-.gradient5 {
+/* .gradient5 {
     background: linear-gradient(to bottom, #ffcc01, #220606);
-}
+} */
 
 /*Gradients for Instructor Borders*/
-.gradient5 {
+/* .gradient5 {
     background: linear-gradient(to bottom, #ffcc01, #220606);
+} */
+
+/*Animations*/
+.btn {
+    transform: translateZ(0);
+    transition-duration: 0.1s;
+    transition-property: transform;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.btn:active {
+    transform: scale(1.0);
 }
