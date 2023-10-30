@@ -15,9 +15,8 @@ async function addAllCards() {
 
         
         let cardInnerHTML =
-        `<section>
-         <section class="card-border w-[24rem] h-full m-auto p-2 bg-gradient-to-b from-gray-400 to-gray-700 font-spacegrotesk text-white rounded-2xl">
-            <section class="full-container flex flex-col h-full bg-gradient-to-b from-indigo-950 to-slate-900 rounded-2xl">
+        `<section class="card-border w-[24rem] m-auto p-2 bg-gradient-to-b from-gray-400 to-gray-700 font-spacegrotesk text-white rounded-2xl">
+            <section class="full-container flex flex-col bg-gradient-to-b from-indigo-950 to-slate-900 rounded-2xl">
                 <section class="upper-field-section pb-4 pr-4 font-pixelify h-42">
                     <h2 id="teaching-level" class="w-52 p-1 mb-2 bg-gradient-to-b from-gray-400 to-slate-600 rounded-br-lg text-lg">
                         ${person.Rank}
@@ -84,7 +83,6 @@ async function addAllCards() {
                     <p class="w-1/4 text-right">${person.Creator}</p>
                 </section>
             </section>
-        </section>
         </section>
         <section class="media-sharing-section mx-auto w-[20rem]">
             <section class="flex flex-row justify-around mx-10 py-5 text-6xl">
