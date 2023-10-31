@@ -1,0 +1,144 @@
+body {
+    background: #000;
+    color: black;
+    /*display: flex;
+    justify-content: center;*/
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 45px;
+    align-items: center;
+    margin: 0;
+}
+
+.card {
+    background-color: gray;
+    border: 5px solid yellow;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) ;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-top-right-radius: 5px 5px;
+    border-top-left-radius: 5px 5px;
+    padding: 6px;
+    max-height: 5em;
+}
+
+.basic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.picture-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding-bottom: 2px;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+}
+
+.profile img {
+    width: 200%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+img {
+    width: 200%;
+    max-height: 200px;
+    object-fit: contain; /* This ensures that the image retains its aspect ratio */ 
+}
+
+.attack {
+    font-weight: bold;
+}
+
+.summary {
+    text-align: center;
+}
+
+.holder{
+    margin: 2;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    padding-top: 5px;
+    font-weight: bold;
+    max-height:6em;
+    font-size: x-small;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.weakness {
+    padding-top: 6px;
+}
+
+.resistance {
+    padding-top: 6px;
+}
+
+.weakness-section {
+    color: rgb(162, 24, 24);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.resistance-section {
+    color: rgb(80, 27, 130);
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size:x-small;
+    margin: 2px;
+}
+
+.sentence {
+    font-size: small;
+    text-align: left;
+    padding-bottom: 3px;
+}
+
