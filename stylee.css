@@ -131,7 +131,7 @@ img {
 .bottom{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
     font-size:x-small;
     margin: 2px;
 }
