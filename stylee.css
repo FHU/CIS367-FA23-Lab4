@@ -10,6 +10,27 @@ body {
     margin: 0;
 }
 
+/* .header{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+} */
+
+.buttons {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-evenly;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 4px;
+
+}
+
 .card {
     background-color: gray;
     border: 5px solid yellow;

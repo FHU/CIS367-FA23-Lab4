@@ -80,6 +80,18 @@ async function addAllCards() {
                 <p class="designer">Kaylee Odom</p>
             </div>
                         
+        </div>
+        
+        <div class="buttons">
+            <button class="like-btn" id="like">
+                <i class="material-symbols-outlined">favorite</i>
+            </button>
+            <button class="download-btn" id="download">
+                <i class="material-symbols-outlined">download</i>
+            </button>
+            <button class="share-btn" id="share">
+                <i class="material-symbols-outlined">share</i>
+            </button>
         </div>`;
 
         div.innerHTML = cardInnerHTML;
@@ -94,3 +106,55 @@ addAllCards();
 function addCard(person){
 
 }
+
+const likebtn = document.getElementById('like');
+const downloadbtn = document.getElementById('download');
+const sharebtn = document.getElementById('share');
+
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+let isLiked = false;
+
+// Like a card
+function likeCard(){
+    if(!isLiked){
+        likebtn.textContent = "Liked";
+        likebtn.style.backgroundColor = "red";
+
+        isLiked = true;
+    }
+    else{
+        likebtn.textContent = "Like";
+        likebtn.style.backgroundColor = "gray";
+
+        isLiked = false;
+    }
+}
+
+// Download a card as PNG
+function downloadCard(){
+    const dataURL = canvas.toDataURL("image/png");
+    // Need to add with what content I want drawn on the canvas
+
+    const downloadLink = document.createElement("a");
+    downloadLink.href = dataURL;
+    downloadLink.download = "downloaded_image.png";
+
+    downloadLink.click();
+}
+
+// Share a card through email
+function shareCard(){
+    const subject = "Check out this amazing card";
+    const body = "I think you would quite enjoy this card";
+
+    const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+}
+
+
+likebtn.addEventListener("click", likeCard);
+downloadbtn.addEventListener("click", downloadCard);
+sharebtn.addEventListener("click", shareCard);
