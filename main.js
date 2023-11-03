@@ -2,6 +2,19 @@ const API_URL = "https://fhu-faculty-api.netlify.app/fhu-faculty.json"
 
 //const API_URL = "fhu-faculty-api.json"
 
+function drawCardOnCanvas(person){
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d")
+
+    canvas.width = 800;
+    canvas.height = 800;
+
+    ctx.fillStyle = "white"
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    return canvas;
+}
+
 async function addAllCards() {
     
     // load the data
@@ -101,17 +114,13 @@ async function addAllCards() {
         const likebtn = div.querySelector('.like-btn');
         const likedIcon = div.querySelector('.liked-icon');
         const unlikedIcon = div.querySelector('.unliked-icon');
-
         likedIcon.style.display = 'none';
         let isLiked = false;
 
+        // Download controls
         const downloadbtn = div.querySelector('.download-btn');
         const sharebtn = div.querySelector('.share-btn');
 
-        //const canvas = document.getElementById("canvas");
-        //const ctx = canvas.getContext("2d");
-
-        //let isLiked = false;
 
         function likeCard() {
             if(!isLiked){
@@ -128,6 +137,7 @@ async function addAllCards() {
 
         // Download a card as PNG
         function downloadCard(){
+            const canvas = drawCardOnCanvas(person)
             const dataURL = canvas.toDataURL("image/png");
             // Need to add with what content I want drawn on the canvas
 
