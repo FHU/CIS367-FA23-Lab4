@@ -139,13 +139,24 @@ async function addAllCards() {
         function downloadCard(){
             const canvas = drawCardOnCanvas(person)
             const dataURL = canvas.toDataURL("image/png");
+            
             // Need to add with what content I want drawn on the canvas
+            const cardHTML = div.querySelector('.card').outerHTML;
 
-            const downloadLink = document.createElement("a");
-            downloadLink.href = dataURL;
-            downloadLink.download = "downloaded_image.png";
+            const img = new Image();
+            img.src = 'data:image/svg+mxl,' + encodeURIComponent(cardHTML);
 
-            downloadLink.click();
+            img.onload = () => {
+                ctx.drawImage(img, 0, 0);
+
+                const dataURL = canvas.toDataURL("image/png");
+
+                const downloadLink = document.createElement("a");
+                downloadLink.href = dataURL;
+                downloadLink.download = "downloaded_image.png";
+
+                downloadLink.click();
+            };
         }
 
         // Share a card through email
