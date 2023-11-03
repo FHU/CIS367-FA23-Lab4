@@ -5,7 +5,6 @@ const API_URL = "https://fhu-faculty-api.netlify.app/fhu-faculty.json"
 async function addAllCards() {
     
     // load the data
-
     let response = await fetch(API_URL);
     let people = await response.json();
 
@@ -84,7 +83,8 @@ async function addAllCards() {
         
         <div class="buttons">
             <button class="like-btn" id="like">
-                <i class="material-symbols-outlined">favorite</i>
+                <i class="material-icons liked-icon">favorite</i>
+                <i class="material-icons unliked-icon">favorite_border</i>
             </button>
             <button class="download-btn" id="download">
                 <i class="material-symbols-outlined">download</i>
@@ -95,10 +95,65 @@ async function addAllCards() {
         </div>`;
 
         div.innerHTML = cardInnerHTML;
-
         document.body.appendChild(div);
+        
+        // Like controls
+        const likebtn = div.querySelector('.like-btn');
+        const likedIcon = div.querySelector('.liked-icon');
+        const unlikedIcon = div.querySelector('.unliked-icon');
 
+        likedIcon.style.display = 'none';
+        let isLiked = false;
 
+        const downloadbtn = div.querySelector('.download-btn');
+        const sharebtn = div.querySelector('.share-btn');
+
+        //const canvas = document.getElementById("canvas");
+        //const ctx = canvas.getContext("2d");
+
+        //let isLiked = false;
+
+        function likeCard() {
+            if(!isLiked){
+                isLiked = true;
+                likedIcon.style.display = 'inline';
+                unlikedIcon.style.display = 'none';
+            }
+            else{
+                isLiked = false;
+                likedIcon.style.display = 'none';
+                unlikedIcon.style.display = 'inline';
+            }
+        }
+
+        // Download a card as PNG
+        function downloadCard(){
+            const dataURL = canvas.toDataURL("image/png");
+            // Need to add with what content I want drawn on the canvas
+
+            const downloadLink = document.createElement("a");
+            downloadLink.href = dataURL;
+            downloadLink.download = "downloaded_image.png";
+
+            downloadLink.click();
+        }
+
+        // Share a card through email
+        function shareCard(){
+            const subject = "Check out this amazing card";
+            const body = "I think you would quite enjoy this card";
+
+            const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            window.location.href = mailtoLink;
+        }
+
+        // Like a card
+        likebtn.addEventListener("click", likeCard);
+        // Download a card
+        downloadbtn.addEventListener("click", downloadCard);
+        // Share a card
+        sharebtn.addEventListener("click", shareCard);
     });
 }
                             
@@ -106,55 +161,3 @@ addAllCards();
 function addCard(person){
 
 }
-
-const likebtn = document.getElementById('like');
-const downloadbtn = document.getElementById('download');
-const sharebtn = document.getElementById('share');
-
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
-
-let isLiked = false;
-
-// Like a card
-function likeCard(){
-    if(!isLiked){
-        likebtn.textContent = "Liked";
-        likebtn.style.backgroundColor = "red";
-
-        isLiked = true;
-    }
-    else{
-        likebtn.textContent = "Like";
-        likebtn.style.backgroundColor = "gray";
-
-        isLiked = false;
-    }
-}
-
-// Download a card as PNG
-function downloadCard(){
-    const dataURL = canvas.toDataURL("image/png");
-    // Need to add with what content I want drawn on the canvas
-
-    const downloadLink = document.createElement("a");
-    downloadLink.href = dataURL;
-    downloadLink.download = "downloaded_image.png";
-
-    downloadLink.click();
-}
-
-// Share a card through email
-function shareCard(){
-    const subject = "Check out this amazing card";
-    const body = "I think you would quite enjoy this card";
-
-    const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    window.location.href = mailtoLink;
-}
-
-
-likebtn.addEventListener("click", likeCard);
-downloadbtn.addEventListener("click", downloadCard);
-sharebtn.addEventListener("click", shareCard);
