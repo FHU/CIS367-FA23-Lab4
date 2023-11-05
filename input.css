@@ -53,3 +53,12 @@
 .btn:active {
     transform: scale(1.0);
 }
+
+#added-bookmarks {
+    position: absolute;
+    left: -300px;
+}
+
+#added-bookmarks.active {
+    left: 0px;
+}

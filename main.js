@@ -1,7 +1,10 @@
 const API_URL = "https://fhu-faculty-api.netlify.app/fhu-faculty.json"
 const API_URL2 = "/FHU-faculty-api.json"
 
-const container = document.querySelector(".container")
+const container = document.getElementsByClassName("container")
+const bookmarkCollection = document.getElementById("added-bookmarks")
+const bookmarkCollectionBtn = document.getElementsByClassName("bookmark-collection-btn")
+const bookmarkBtn = document.getElementsByClassName("bookmark")
 
 addAllCards();
 
@@ -106,7 +109,15 @@ function likeToggle(x) {
     x.classList.toggle("text-red-500")
   }
 
-  function bookmarkToggle(x) {
-    x.classList.toggle("fa-solid");
-    x.classList.toggle("text-amber-500")
-  }
+function bookmarkToggle(x) {
+x.classList.toggle("fa-solid");
+x.classList.toggle("text-amber-500")
+}
+
+// ------
+function bookmarkContainerSlide() {
+bookmarkCollection.classList.toggle("active");
+}
+
+// ------
+bookmarkCollectionBtn.addEventListener("click", bookmarkContainerSlide());
