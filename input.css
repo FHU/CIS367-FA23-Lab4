@@ -56,9 +56,11 @@
 
 #added-bookmarks {
     position: absolute;
+    transition: 1s;
     left: -300px;
 }
 
 #added-bookmarks.active {
+    transition: 0.7s;
     left: 0px;
 }

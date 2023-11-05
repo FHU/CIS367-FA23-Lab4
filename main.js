@@ -1,7 +1,7 @@
 const API_URL = "https://fhu-faculty-api.netlify.app/fhu-faculty.json"
 const API_URL2 = "/FHU-faculty-api.json"
 
-const container = document.getElementsByClassName("container")
+const container = document.querySelector(".container")
 const bookmarkCollection = document.getElementById("added-bookmarks")
 const bookmarkCollectionBtn = document.getElementsByClassName("bookmark-collection-btn")
 const bookmarkBtn = document.getElementsByClassName("bookmark")
@@ -111,10 +111,20 @@ function likeToggle(x) {
 
 function bookmarkToggle(x) {
 x.classList.toggle("fa-solid");
-x.classList.toggle("text-amber-500")
+x.classList.toggle("text-amber-500");
 }
 
 // ------
+bookmarkList = ['Kenan Casey', 'Jared Collins', 'Ben Clark', 'David Powell', 'Nathan Warf']
+
+for (object in bookmarkList)
+{
+    let p = document.createElement('p')
+    p.innerHTML = bookmarkList[object];
+
+    bookmarkCollection.append(p)
+}
+
 function bookmarkContainerSlide() {
 bookmarkCollection.classList.toggle("active");
 }
