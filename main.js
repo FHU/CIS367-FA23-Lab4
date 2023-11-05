@@ -100,6 +100,11 @@ async function addAllCards() {
 
         document.body.appendChild(div);
         container.append(div);
+
+        bookmarkCollectionParagraph = document.createElement('p');
+        bookmarkCollectionParagraph.innerHTML = `${person.FirstName} ${person.LastName}`;
+
+        // bookmarkCollection.append(bookmarkCollectionParagraph);
     });
 
 }
@@ -112,6 +117,10 @@ function likeToggle(x) {
 function bookmarkToggle(x) {
 x.classList.toggle("fa-solid");
 x.classList.toggle("text-amber-500");
+
+let p = document.createElement('p')
+
+p.innerHTML = "Test";
 }
 
 // ------
