@@ -581,6 +581,11 @@ video {
   margin-right: 0.5rem;
 }
 
+.mx-40 {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -790,4 +795,3 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-
