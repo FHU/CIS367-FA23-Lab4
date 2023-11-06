@@ -3,7 +3,7 @@ const API_URL2 = "/FHU-faculty-api.json"
 
 const container = document.querySelector(".container")
 const bookmarkCollection = document.getElementById("added-bookmarks")
-const bookmarkCollectionBtn = document.getElementsByClassName("bookmark-collection-btn")
+const bookmarkCollectionBtn = document.getElementById("bookmark-collection-btn")
 const bookmarkBtn = document.getElementsByClassName("bookmark")
 
 addAllCards();
@@ -12,6 +12,7 @@ async function addAllCards() {
     // load the data (from netlify)
     let response = await fetch(API_URL);
     let people = await response.json();
+
 
     people.forEach(person => {
         let div = document.createElement('div');
@@ -31,7 +32,7 @@ async function addAllCards() {
                         </div>
             
                         <div class="text-end">
-                            <h1 id="health-points" class="text-3xl"><span class="text-sm">HP</span> <span? class="font-spacegrotesk font-bold text-emerald-200">${person.HitPoints}</span?</h1>
+                            <h1 id="health-points" class="text-3xl"><span class="text-sm">HP</span> <span class="font-spacegrotesk font-bold text-emerald-200">${person.HitPoints}</span></h1>
                             <h2 id="field" class="text-sm">${person.FieldofStudy}</h2>
                         </div>
                     </div>
@@ -101,10 +102,15 @@ async function addAllCards() {
         document.body.appendChild(div);
         container.append(div);
 
+        // For bookmark toggle functionality
+
         bookmarkCollectionParagraph = document.createElement('p');
+
+        bookmarkCollectionParagraph.classList.add('hidden');
+        bookmarkCollectionParagraph.classList.add(`${person.FirstName}-${person.LastName}`);
         bookmarkCollectionParagraph.innerHTML = `${person.FirstName} ${person.LastName}`;
 
-        // bookmarkCollection.append(bookmarkCollectionParagraph);
+        bookmarkCollection.append(bookmarkCollectionParagraph);
     });
 
 }
@@ -115,28 +121,26 @@ function likeToggle(x) {
   }
 
 function bookmarkToggle(x) {
-x.classList.toggle("fa-solid");
-x.classList.toggle("text-amber-500");
+    x.classList.toggle("fa-solid");
+    x.classList.toggle("text-amber-500");
 
-let p = document.createElement('p')
-
-p.innerHTML = "Test";
+    // // Get specific name
+    // document.querySelector("#added-bookmarks > p.Kenan-Casey").classList.toggle('hidden');
+    // document.querySelector("#added-bookmarks > p.Jared-Collins").classList.toggle('hidden');
 }
 
 // ------
-bookmarkList = ['Kenan Casey', 'Jared Collins', 'Ben Clark', 'David Powell', 'Nathan Warf']
+let bookmarkList = ['Kenan Casey', 'Jared Collins', 'Ben Clark', 'David Powell', 'Nathan Warf', 'Amy Sewell', 'Charles Tucker', 'Doug Burleson', 'Cliff Thompson', 'Brandyn Graves']
+
 
 for (object in bookmarkList)
 {
     let p = document.createElement('p')
     p.innerHTML = bookmarkList[object];
 
-    bookmarkCollection.append(p)
+    bookmarkCollection.append(p);
 }
 
 function bookmarkContainerSlide() {
-bookmarkCollection.classList.toggle("active");
+    bookmarkCollection.classList.toggle("active");
 }
-
-// ------
-bookmarkCollectionBtn.addEventListener("click", bookmarkContainerSlide());
