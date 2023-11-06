@@ -112,11 +112,29 @@ async function addAllCards() {
         // Hidden element for each name to defaultly disappear
         bookmarkCollectionParagraph.classList.add('hidden');
 
-        // Adds identifier class for each name
-        bookmarkCollectionParagraph.classList.add(`${person.FirstName}-${person.LastName}`);
-        bookmarkCollectionParagraph.innerHTML = `${person.FirstName} ${person.LastName}`;
+        facultyNameClass = `${person.FirstName}-${person.LastName}`
 
-        bookmarkList.push(`${person.FirstName}-${person.LastName}`)
+        // Adds identifier class for each name - uniquely identifies any duplicates
+        if (bookmarkList.includes(`${facultyNameClass}`))
+        {
+            bookmarkCollectionParagraph.classList.add(`${facultyNameClass}-one`);        
+            bookmarkList.push(`${facultyNameClass}-one`)
+        }
+
+        else if (bookmarkList.includes(`${facultyNameClass}-one`))
+        {
+            bookmarkCollectionParagraph.classList.add(`${facultyNameClass}-two`)
+            bookmarkList.push(`${facultyNameClass}-two`)
+        }
+
+        else
+        {
+            bookmarkCollectionParagraph.classList.add(`${facultyNameClass}`);  
+            bookmarkList.push(`${facultyNameClass}`)
+        }
+
+        // The text itself
+        bookmarkCollectionParagraph.innerHTML = `${person.FirstName} ${person.LastName}`;
 
         bookmarkCollection.append(bookmarkCollectionParagraph);
 
@@ -134,6 +152,7 @@ function bookmarkToggle(x) {
     x.classList.toggle("text-amber-500");
 
     // Get specific name
+
     for (let i = 0; i < bookmarkList.length; i++)
     {
         let object = bookmarkList[i];
