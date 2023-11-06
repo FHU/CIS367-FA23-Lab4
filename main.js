@@ -8,6 +8,8 @@ const bookmarkBtn = document.getElementsByClassName("bookmark")
 
 addAllCards();
 
+let bookmarkList = [] 
+
 async function addAllCards() {
     // load the data (from netlify)
     let response = await fetch(API_URL);
@@ -90,7 +92,7 @@ async function addAllCards() {
         </section>
         <section class="media-sharing-section mx-auto w-[20rem]">
             <section class="flex flex-row justify-around mx-10 py-5 text-6xl">
-                <div onclick="bookmarkToggle(this)" class="bookmark fa-regular fa-bookmark cursor-pointer btn"></div>
+                <div onclick="bookmarkToggle(this)" class="bookmark ${person.FirstName}-${person.LastName} fa-regular fa-bookmark cursor-pointer btn"></div>
                 <div class="download fa-regular fa-circle-down cursor-pointer btn"></div>
                 <div onclick="likeToggle(this)" class="heart fa-regular fa-heart cursor-pointer btn"></div>
             </section>
@@ -107,9 +109,14 @@ async function addAllCards() {
         // Paragraph element for bookmark list
         bookmarkCollectionParagraph = document.createElement('p');
 
+        // Hidden element for each name to defaultly disappear
         bookmarkCollectionParagraph.classList.add('hidden');
+
+        // Adds identifier class for each name
         bookmarkCollectionParagraph.classList.add(`${person.FirstName}-${person.LastName}`);
         bookmarkCollectionParagraph.innerHTML = `${person.FirstName} ${person.LastName}`;
+
+        bookmarkList.push(`${person.FirstName}-${person.LastName}`)
 
         bookmarkCollection.append(bookmarkCollectionParagraph);
 
@@ -127,7 +134,16 @@ function bookmarkToggle(x) {
     x.classList.toggle("text-amber-500");
 
     // Get specific name
-    document.querySelector("#added-bookmarks > p").classList.toggle('hidden');
+    for (let i = 0; i < bookmarkList.length; i++)
+    {
+        let object = bookmarkList[i];
+        if (x.classList.contains(object))
+        {
+            document.querySelector(`#added-bookmarks > p.${object}`).classList.toggle('hidden');
+        }
+    }
+
+    //document.querySelector("#added-bookmarks > p").classList.toggle('hidden');
 
     console.log(x);
 }
