@@ -104,6 +104,7 @@ async function addAllCards() {
 
         // For bookmark toggle functionality
 
+        // Paragraph element for bookmark list
         bookmarkCollectionParagraph = document.createElement('p');
 
         bookmarkCollectionParagraph.classList.add('hidden');
@@ -111,6 +112,7 @@ async function addAllCards() {
         bookmarkCollectionParagraph.innerHTML = `${person.FirstName} ${person.LastName}`;
 
         bookmarkCollection.append(bookmarkCollectionParagraph);
+
     });
 
 }
@@ -124,22 +126,23 @@ function bookmarkToggle(x) {
     x.classList.toggle("fa-solid");
     x.classList.toggle("text-amber-500");
 
-    // // Get specific name
-    // document.querySelector("#added-bookmarks > p.Kenan-Casey").classList.toggle('hidden');
-    // document.querySelector("#added-bookmarks > p.Jared-Collins").classList.toggle('hidden');
+    // Get specific name
+    document.querySelector("#added-bookmarks > p").classList.toggle('hidden');
+
+    console.log(x);
 }
 
 // ------
-let bookmarkList = ['Kenan Casey', 'Jared Collins', 'Ben Clark', 'David Powell', 'Nathan Warf', 'Amy Sewell', 'Charles Tucker', 'Doug Burleson', 'Cliff Thompson', 'Brandyn Graves']
+// let bookmarkList = ['Kenan Casey', 'Jared Collins', 'Ben Clark', 'David Powell', 'Nathan Warf', 'Amy Sewell', 'Charles Tucker', 'Doug Burleson', 'Cliff Thompson', 'Brandyn Graves']
 
 
-for (object in bookmarkList)
-{
-    let p = document.createElement('p')
-    p.innerHTML = bookmarkList[object];
+// for (object in bookmarkList)
+// {
+//     let p = document.createElement('p')
+//     p.innerHTML = bookmarkList[object];
 
-    bookmarkCollection.append(p);
-}
+//     bookmarkCollection.append(p);
+// }
 
 function bookmarkContainerSlide() {
     bookmarkCollection.classList.toggle("active");
