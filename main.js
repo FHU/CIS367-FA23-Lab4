@@ -19,7 +19,7 @@ async function addAllCards() {
         let div = document.createElement('div');
         
         let cardInnerHTML = 
-        `<div class="whole">
+        `
             <div class="card">
                 
                 <div class="top">
@@ -45,11 +45,10 @@ async function addAllCards() {
                         <p class="points">${person.Attack1Damage}+</p>
                     </div>
                     <p class="sentence">Prevent all damage done to this Pokemon by attacks from Basic Pokemon during 
-                        your apponenets next turn. This pokemon can't use Quick Guard during your next turn.</p>
+                        your apponenets next turn.</p>
                                 
                     <div class="skills">
                         <div class="stars">
-                            <span class="material-symbols-outlined">stars</span>
                             <span class="material-symbols-outlined">stars</span>
                         </div>
                         <p class="attack">${person.Attack2}</p>
@@ -94,7 +93,7 @@ async function addAllCards() {
                     <i class="material-symbols-outlined">share</i>
                 </button>
             </div>
-        </div>`;
+        `;
 
         div.innerHTML = cardInnerHTML;
         document.body.appendChild(div);
@@ -155,3 +154,37 @@ addAllCards();
 function addCard(person){
 
 }
+
+const data = addAllCards;
+
+const carousel = document.getElementsByClassName("carousel")[0];
+var activeIndex = Math.floor(data.length/2);
+
+function addCards(){
+    
+}
+
+addCards();
+updateCards();
+
+function updateCards(){
+
+}
+
+window.addEventListener("resize", updateCards);
+
+document.getElementById("prevButton").addEventListener("click", ()=>{
+    if( activeIndex >= 0)
+    {
+        activeIndex--;
+        updateCards();
+    }
+});
+
+document.getElementById("nextButton").addEventListener("click", ()=>{
+    if( activeIndex < data.length)
+    {
+        activeIndex++;
+        updateCards();
+    }
+});
