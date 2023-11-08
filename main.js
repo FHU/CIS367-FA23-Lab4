@@ -19,7 +19,7 @@ async function addAllCards() {
         let div = document.createElement('div');
         
         let cardInnerHTML = 
-        `
+        `<div class="whole">
             <div class="card">
                 
                 <div class="top">
@@ -93,7 +93,7 @@ async function addAllCards() {
                     <i class="material-symbols-outlined">share</i>
                 </button>
             </div>
-        `;
+        </div>`;
 
         div.innerHTML = cardInnerHTML;
         document.body.appendChild(div);
@@ -149,42 +149,74 @@ async function addAllCards() {
     });
 }
 
-                            
-addAllCards();                         
-function addCard(person){
+addAllCards();
 
-}
 
-const data = addAllCards;
+// const data = addAllCards();
 
-const carousel = document.getElementsByClassName("carousel")[0];
-var activeIndex = Math.floor(data.length/2);
+// const carousel = document.getElementsByClassName("carousel")[0];
+// var activeIndex = Math.floor(data.length/2);
 
-function addCards(){
-    
-}
+// function addCards(){
+//     data.forEach((item, index) =>{
+//         let div = document.createElement('div');
+//         div.classList.add("box");
 
-addCards();
-updateCards();
+//         div.innerHTML = `${index} ${item}`
 
-function updateCards(){
+//         carousel.appendChild(div);
+//     })
+// }
 
-}
+// addCards();
+// updateCards();
 
-window.addEventListener("resize", updateCards);
+// function updateCards(){
+//     var windowwidth = window.innerWidth;
+//     console.log(windowwidth);
+//     var cardWidth = 350;
+//     const length = data.length;
 
-document.getElementById("prevButton").addEventListener("click", ()=>{
-    if( activeIndex >= 0)
-    {
-        activeIndex--;
-        updateCards();
-    }
-});
+//     const boxes = document.querySelectorAll(".carousel .box");
 
-document.getElementById("nextButton").addEventListener("click", ()=>{
-    if( activeIndex < data.length)
-    {
-        activeIndex++;
-        updateCards();
-    }
-});
+//     boxes.forEach((div, index) => {
+//         if(index < activeIndex){
+//             div.classList.remove("active");
+
+//             div.style.zIndex = index;
+//             const offset = 100+(length-index)*2;
+//             div.style.transform = `translateX(-${offset}%) scale(100%)`;
+//         }
+//         else if(index === activeIndex)
+//         {
+//             div.classList.add("active");
+//             div.style.zIndex = 300;
+//             div.style.transform = `translateX(0) scale(120%)`;
+//         }
+//         else{
+//             div.classList.remove("active");
+//             div.style.zIndex = (length - index);
+//             const offset = 100+(index)*2;
+
+//             div.style.transform = `translateX(${offset}%) scale(100%)`;
+//         }
+//     });
+// }
+
+// window.addEventListener("resize", updateCards);
+
+// document.getElementById("prevButton").addEventListener("click", ()=>{
+//     if( activeIndex >= 0)
+//     {
+//         activeIndex--;
+//         updateCards();
+//     }
+// });
+
+// document.getElementById("nextButton").addEventListener("click", ()=>{
+//     if( activeIndex < data.length)
+//     {
+//         activeIndex++;
+//         updateCards();
+//     }
+// });
